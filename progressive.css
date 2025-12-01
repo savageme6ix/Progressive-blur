@@ -11,7 +11,8 @@
 .container1{
     height: 350px;
     width:300px;
-    background-color: #79c2d0;
+    /* background-color: white; */
+    background: linear-gradient(to bottom, #ffffff, #79c2d0);
     border-radius:30px;
     margin-bottom: 120px;
     display: flex;
@@ -21,7 +22,8 @@
     
 }
 .symbol{
-    background:#63b0c0 ;
+    padding: 2px;
+    background:#f0ecec ;
     justify-content: end;
     text-align: center;
     align-content: center;
@@ -33,7 +35,7 @@
     border-radius: 20px;
     border: none;
     /* background: #bbe4e9; */
-    color: white;
+    color: black;
 }
 .footer{
     position: absolute;
@@ -53,10 +55,23 @@
     transform: rotate(-45deg);
     border: none;
     mix-blend-mode: multiply;
+     /* mask-image: linear-gradient(to bottom, black 50%, transparent 95%);
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 95%); */
 }
-/* .container1 img{
-      width: 100%;
-    filter: blur(0px);
-    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-} */
+.progressive-blur {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Adjusts how high up the blur goes */
+  z-index: 1;
+  
+  /* 1. The Blur Effect */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  
+  /* 2. The Gradient Mask (The "Progressive" part) */
+  /* This creates a fade from transparent (no blur) to opaque (full blur) */
+  mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
+}
