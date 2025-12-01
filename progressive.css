@@ -16,8 +16,13 @@
     margin-bottom: 120px;
     display: flex;
     justify-content: end;
+    position: relative;
+    overflow: hidden;
+    
 }
 .symbol{
+    background:#63b0c0 ;
+    justify-content: end;
     text-align: center;
     align-content: center;
     margin-top: 20px;
@@ -26,7 +31,8 @@
     width: 70px;
     border: solid 1px;
     border-radius: 20px;
-    background: #bbe4e9;
+    border: none;
+    /* background: #bbe4e9; */
     color: white;
 }
 .footer{
@@ -37,3 +43,20 @@
     border-radius: 50px;
     background: #e4f1fe;
 }
+.img{
+    position: absolute;
+    object-fit: contain;
+    height: auto;
+    width:100%;
+    right: 80px;
+    bottom: 50px;
+    transform: rotate(-45deg);
+    border: none;
+    mix-blend-mode: multiply;
+}
+/* .container1 img{
+      width: 100%;
+    filter: blur(0px);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+} */
