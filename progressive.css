@@ -1,0 +1,6 @@
+.main-container{
+    height: 250px;
+    width:400px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #5585b5,#79c2d0);
+}
