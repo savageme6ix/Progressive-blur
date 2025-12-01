@@ -76,3 +76,18 @@
   mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 100%);
 }
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer img{
+    height: 50px;
+    width: auto;
+}
+.images{
+    display: flex;
+    gap: 10px;
+}
+
+
