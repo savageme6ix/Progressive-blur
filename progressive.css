@@ -1,7 +1,12 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .main-container{
     font-family: "Montserrat", sans-serif;
     height: 500px;
-    width:500px;
+    width:700px;
     border-radius: 20px;
     background: linear-gradient(to bottom, #5585b5,#79c2d0);
     display: flex;
@@ -20,6 +25,7 @@
     justify-content: end;
     position: relative;
     overflow: hidden;
+    flex-wrap: wrap;
     
 }
 .symbol{
@@ -89,5 +95,19 @@
     display: flex;
     gap: 10px;
 }
-
+.cont-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  line-height: 40px
+}
+.p1{
+    font-size:50px;
+}
+.p2{
+    font-size: 50px;
+}
 
